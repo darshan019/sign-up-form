@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="odin">
+                <img src="odin-lined.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by &nbsp<a href="#"> Halie West</a>&nbsp on &nbsp<a href="#"> Unsplash</a> </p>
+        </div>
+        <div class="text-section">
+            <h2>
+                This is not a real online service! You know you need something like this
+                in your life to help you realize your deepese dreams.
+                Sign up <em>now</em> to get started.
+            </h2>
+            <p>You <em>know</em> you want to.</p>
+            <p>Let's do this!</p>
+            <form action="#" method="post" id="form" onsubmit="passwordValidation">
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div>
+                    <label for="num">PHONE NUMBER</label>
+                    <input type="tel" id="num" min="10" max="10" name="phone-num" required>
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input class="error" type="password" id="password" min="8" max="15" name="pwd" required>
+                    <p class="display">*Password do not match</p>
+                </div>
+                <div>
+                    <label for="password1">CONFIRM PASSWORD</label>
+                    <input class="error" type="password" id="password1" min="8" max="15" name="confirm-pwd" id="password1" required>
+                </div>
+                <div class="submit">
+                    <label class="submit-label" for="sub">Create Account</label>
+                    <input type="submit" id="sub" name="submit">
+                    <footer><h3>Already have an account?&nbsp<a href="#">Log in</a></h3></footer>
+                </div>         
+            </form>
+        </div>
+    </div>
+</body>
+</html>
