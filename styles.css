@@ -36,12 +36,6 @@ body{
 .odin>h1{
     display: flex;
 }
-input[type='password']:invalid{
-    border-color: red;
-}
-input:focus{
-    box-shadow: 3.5px 3.5px lightgray;
-}
 .odin{
     display: flex;
     width: 100%;
@@ -86,15 +80,6 @@ form div{
     margin: 25px;
     float: left;
 }
-a{
-    color: white;
-}
-a:visited{
-    color: purple;
-}
-.display{
-    color: red;
-}
 input[type='submit']{
     height: 0;
     width: 0;
@@ -120,7 +105,7 @@ section{
     background-color: #596D48;
 }
 .submit{
-margin-right: 30%;
+margin-right: 40%;
 margin-top: 2%;
 }
 footer{
@@ -129,4 +114,14 @@ margin-top: 25px;
 footer a{
 color: #596D48;
 text-decoration: none;
+}
+input:focus{
+box-shadow: 2.5px 2.5px lightgray;
+border-color: rgb(97, 180, 208);
+}
+#display{
+color: red;
+}
+.error:invalid{
+border-color: red;
 }
